@@ -2,10 +2,38 @@ body {
     font-family: sans-serif;
     margin: 0;
     background: #070A11;
+    display: block;
+}
+
+*:not(input):not(textarea) {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 body::-webkit-scrollbar {
     display: none;
+}
+
+.gradient_effect {
+    position: relative;
+    width: 100%;
+    height: 650px;
+}
+
+.gradient_effect::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), transparent);
+    z-index: 1;
 }
 
 .header_contents {
@@ -20,8 +48,9 @@ body::-webkit-scrollbar {
 
 .logo {
     height: 50px;
-    border-radius: 50px;
+    border-radius: 50%;
     margin-right: 30px;
+    cursor: pointer;
 }
 
 .home_foll_cat {
@@ -47,15 +76,21 @@ body::-webkit-scrollbar {
     border-radius: 40px;
     border: 1px solid rgba(255, 255, 255, 0.5);
     background-color: transparent;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(25px);
     height: 40px;
     width: 280px;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
 }
 
 
 .material-symbols-outlined {
     color: #636871;
     font-size: 22px;
+    margin-right: 5px;
 }
 
 .search_input {
@@ -63,6 +98,8 @@ body::-webkit-scrollbar {
     outline: 0;
     background: transparent;
     font-size: 15px;
+    color: white;
+    width: 250px;
 }
 
 .search_input::placeholder {
@@ -82,8 +119,9 @@ body::-webkit-scrollbar {
     border-radius: 40px;
     background-color: transparent;
     color: white;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(25px);
     margin-right: 5px;
+    cursor: pointer;
 }
 
 .sign {
@@ -93,6 +131,7 @@ body::-webkit-scrollbar {
     border-radius: 40px;
     background-color: #E12936;
     color: white;
+    cursor: pointer;
 }
 
 /* Slider */
@@ -157,6 +196,8 @@ body::-webkit-scrollbar {
     width: 290px;
     border-radius: 20px;
     object-fit: fill;
+    cursor: pointer;
+
 }
 
 .watch_btn {
@@ -167,28 +208,28 @@ body::-webkit-scrollbar {
     border: none;
     border-radius: 20px;
     font-size: 11px;
-    height: 16px;
-    width: 45px;
+    height: 20px;
+    width: 50px;
     color: white;
     margin-top: -30px;
     position: relative;
     margin-left: 10px;
+    cursor: pointer;
 }
 
 .play_icon {
     height: 12px;
-    margin-right: 2px;
-    color: white;
+    margin-right: 3px;
 }
 
 .category_slider {
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
+    border: 1px solid #161b29;
     max-width: 1500px;
     padding: 25px 20px;
     border-radius: 15px;
-    background: #151925;
+    background: #101521;
     color: white;
     margin: 10px auto 40px auto;
 }
@@ -197,13 +238,27 @@ body::-webkit-scrollbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 .category_cards {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 15px;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    height: 210px;
+}
+
+.category_cards::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    height: 200px;
+    width: 290px;
+    margin-right: 14px;
 }
 
 .tab_box {
@@ -222,15 +277,60 @@ body::-webkit-scrollbar {
     background: transparent;
     border: none;
     color: white;
+    font-size: 16px;
+    cursor: pointer;
 }
 
-.tab_content {
+.left_right_btns {
+    display: flex;
+    gap: 5px;
+}
+
+.btn_scroll {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #1D222E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left_icon_png,
+.right_icon_png {
+    height: 20px;
+}
+
+.content {
     display: none;
+    /*animation: moving .8s ease;*/
 }
 
-.tab_box .tab_btn.active {
-    color: #6F1923;
+.category_slider_head,
+.category_cards {
+    animation: moving .8s ease;
 }
+
+@keyframes moving {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+.content.active {
+    display: block;
+}
+
 
 .tab_btn_line {
     position: absolute;

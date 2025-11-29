@@ -5,62 +5,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Popcorn Dreams</title>
+    <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css">
+    <link rel="stylesheet" href="test.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="normalize.css">
+
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
 
 </head>
 
 <body>
+    <div class="gradient_effect">
 
-    <head class="header">
+        <head class="header">
 
-        <div class="header_contents">
+            <div class="header_contents">
 
-            <img class="logo" src="img/movie_site_logo.avif" alt="">
+                <img class="logo" src="img/movie_site_logo.avif" alt="">
 
-            <div class="home_foll_cat">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Following</a></li>
-                <li><a href="#">Categories</a></li>
+                <ul class="home_foll_cat">
+                    <li><a unselectable="on" href="#">Home</a></li>
+                    <li><a unselectable="on" href="#">Following</a></li>
+                    <li><a unselectable="on" href="#">Categories</a></li>
+                </ul>
+
+                <div class="search">
+                    <span class="material-symbols-outlined">search</span>
+                    <input class="search_input" type="search" placeholder="Search">
+                </div>
+
+                <div class="log_sign_btns">
+                    <section>
+                        <button class="log">Log in</button>
+                    </section>
+                    <button class="sign">Sign up</button>
+                </div>
             </div>
+        </head>
 
-            <div class="search">
-                <span class="material-symbols-outlined">search</span>
-                <input class="search_input" type="search" placeholder="Search">
-            </div>
+        <section class="slider_container">
+            <div class="slider_wrapper">
+                <div class="slider">
+                    <img id="slide1" src="img/slider_wolfman_img.webp" alt="">
+                    <img id="slide2" src="img/slider_got2.jpg" alt="">
+                    <img id="slide3" src="img/slider_stranger_things3.webp" alt="">
+                    <img id="slide4" src="img/slider_aquaman4.jpg" alt="">
+                </div>
 
-            <div class="log_sign_btns">
-                <section>
-                    <button class="log">Log in</button>
-                </section>
-                <button class="sign">Sign up</button>
+                <div class="slider_nav">
+                    <a href="#slide1"></a>
+                    <a href="#slide2"></a>
+                    <a href="#slide3"></a>
+                    <a href="#slide4"></a>
+                </div>
             </div>
-        </div>
-    </head>
+        </section>
+    </div>
 
-    <section class="slider_container">
-        <div class="slider_wrapper">
-            <div class="slider">
-                <img id="slide1" src="img/slider_dark_serie1.jpg" alt="">
-                <img id="slide2" src="img/slider_got2.jpg" alt="">
-                <img id="slide3" src="img/slider_stranger_things3.webp" alt="">
-                <img id="slide4" src="img/slider_aquaman4.jpg" alt="">
-            </div>
-
-            <div class="slider_nav">
-                <a href="#slide1"></a>
-                <a href="#slide2"></a>
-                <a href="#slide3"></a>
-                <a href="#slide4"></a>
-            </div>
-        </div>
-    </section>
 
     <div class="movie_category_tab_container">
         <div class="tab_box">
-            <button class="tab_btn">Komedi</button>
+            <button class="tab_btn active">Komedi</button>
             <button class="tab_btn">Bilim Kurgu</button>
             <button class="tab_btn">Aksiyon</button>
             <button class="tab_btn">Belgeseller</button>
@@ -70,8 +75,8 @@
         </div>
     </div>
 
-    <div class="tab_content_box">
-        <div class="tab_content">
+    <div class="tab_content ">
+        <div class="content active">
             <span>Komedi</span>
             <div class="movie_category_sliders">
 
@@ -79,13 +84,36 @@
                     <div class="category_slider_head">
                         <span class="category_name">Komedi</span>
                         <div class="left_right_btns">
-                            <img src="img/chevron_left.png" alt="" class="left_icon_png">
-                            <img src="img/chevron_right.png" alt="" class="right_icon_png">
+                            <button class="btn_scroll"><img src="img/chevron_left.png" alt=""
+                                    class="left_icon_png"></button>
+                            <button class="btn_scroll"><img src="img/chevron_right.png" alt=""
+                                    class="right_icon_png"></button>
                         </div>
                     </div>
                     <div class="category_cards">
                         <div class="card">
-                            <img class="card_img" src="img/komedi_img4.jpg" alt="">
+                            <img class="card_img" src="img/comedy_img2.jpeg" alt="">
+                            <button class="watch_btn">
+                                <img class="play_icon" src="img/play.png" alt="">
+                                İzle</button>
+                        </div>
+
+                        <div class="card">
+                            <img class="card_img" src="img/comedy_img4.jpeg" alt="">
+                            <button class="watch_btn">
+                                <img class="play_icon" src="img/play.png" alt="">
+                                İzle</button>
+                        </div>
+
+                        <div class="card">
+                            <img class="card_img" src="img/comedy_img.jpg" alt="">
+                            <button class="watch_btn">
+                                <img class="play_icon" src="img/play.png" alt="">
+                                İzle</button>
+                        </div>
+
+                        <div class="card">
+                            <img class="card_img" src="img/komedi_img5.jpeg" alt="">
                             <button class="watch_btn">
                                 <img class="play_icon" src="img/play.png" alt="">
                                 İzle</button>
@@ -99,21 +127,14 @@
                         </div>
 
                         <div class="card">
-                            <img class="card_img" src="img/komedi_img4.jpg" alt="">
+                            <img class="card_img" src="img/komedi_img3.jpg" alt="">
                             <button class="watch_btn">
                                 <img class="play_icon" src="img/play.png" alt="">
                                 İzle</button>
                         </div>
 
                         <div class="card">
-                            <img class="card_img" src="img/komedi_img4.jpg" alt="">
-                            <button class="watch_btn">
-                                <img class="play_icon" src="img/play.png" alt="">
-                                İzle</button>
-                        </div>
-
-                        <div class="card">
-                            <img class="card_img" src="img/komedi_img4.jpg" alt="">
+                            <img class="card_img" src="img/komedi_img5.jpeg" alt="">
                             <button class="watch_btn">
                                 <img class="play_icon" src="img/play.png" alt="">
                                 İzle</button>
@@ -127,7 +148,7 @@
             </div>
         </div>
 
-        <div class="tab_content">
+        <div class="content">
             <span>Bilim Kurgu</span>
             <div class="movie_category_sliders">
 
@@ -135,8 +156,10 @@
                     <div class="category_slider_head">
                         <span class="category_name">Bilim Kurgu</span>
                         <div class="left_right_btns">
-                            <img src="img/chevron_left.png" alt="" class="left_icon_png">
-                            <img src="img/chevron_right.png" alt="" class="right_icon_png">
+                            <button class="btn_scroll"><img src="img/chevron_left.png" alt=""
+                                    class="left_icon_png"></button>
+                            <button class="btn_scroll"><img src="img/chevron_right.png" alt=""
+                                    class="right_icon_png"></button>
                         </div>
                     </div>
                     <div class="category_cards">
@@ -183,7 +206,7 @@
             </div>
         </div>
 
-        <div class="tab_content">
+        <div class="content">
             <span>Aksiyon</span>
             <div class="movie_category_sliders">
 
@@ -191,8 +214,10 @@
                     <div class="category_slider_head">
                         <span class="category_name">Aksiyon</span>
                         <div class="left_right_btns">
-                            <img src="img/chevron_left.png" alt="" class="left_icon_png">
-                            <img src="img/chevron_right.png" alt="" class="right_icon_png">
+                            <button class="btn_scroll"><img src="img/chevron_left.png" alt=""
+                                    class="left_icon_png"></button>
+                            <button class="btn_scroll"><img src="img/chevron_right.png" alt=""
+                                    class="right_icon_png"></button>
                         </div>
                     </div>
                     <div class="category_cards">
@@ -239,7 +264,7 @@
             </div>
         </div>
 
-        <div class="tab_content">
+        <div class="content">
             <span>Belgeseller</span>
             <div class="movie_category_sliders">
 
@@ -247,8 +272,10 @@
                     <div class="category_slider_head">
                         <span class="category_name">Belgeseller</span>
                         <div class="left_right_btns">
-                            <img src="img/chevron_left.png" alt="" class="left_icon_png">
-                            <img src="img/chevron_right.png" alt="" class="right_icon_png">
+                            <button class="btn_scroll"><img src="img/chevron_left.png" alt=""
+                                    class="left_icon_png"></button>
+                            <button class="btn_scroll"><img src="img/chevron_right.png" alt=""
+                                    class="right_icon_png"></button>
                         </div>
                     </div>
                     <div class="category_cards">
@@ -295,7 +322,7 @@
             </div>
         </div>
 
-        <div class="tab_content">
+        <div class="content">
             <span>Diziler</span>
             <div class="movie_category_sliders">
 
@@ -303,8 +330,10 @@
                     <div class="category_slider_head">
                         <span class="category_name">Diziler</span>
                         <div class="left_right_btns">
-                            <img src="img/chevron_left.png" alt="" class="left_icon_png">
-                            <img src="img/chevron_right.png" alt="" class="right_icon_png">
+                            <button class="btn_scroll"><img src="img/chevron_left.png" alt=""
+                                    class="left_icon_png"></button>
+                            <button class="btn_scroll"><img src="img/chevron_right.png" alt=""
+                                    class="right_icon_png"></button>
                         </div>
                     </div>
                     <div class="category_cards">
@@ -351,7 +380,7 @@
             </div>
         </div>
 
-        <div class="tab_content">
+        <div class="content">
             <span>Korku</span>
             <div class="movie_category_sliders">
 
@@ -359,8 +388,10 @@
                     <div class="category_slider_head">
                         <span class="category_name">Korku</span>
                         <div class="left_right_btns">
-                            <img src="img/chevron_left.png" alt="" class="left_icon_png">
-                            <img src="img/chevron_right.png" alt="" class="right_icon_png">
+                            <button class="btn_scroll"><img src="img/chevron_left.png" alt=""
+                                    class="left_icon_png"></button>
+                            <button class="btn_scroll"><img src="img/chevron_right.png" alt=""
+                                    class="right_icon_png"></button>
                         </div>
                     </div>
                     <div class="category_cards">
