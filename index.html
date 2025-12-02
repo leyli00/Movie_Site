@@ -22,38 +22,35 @@
 
 <body>
 
+    <div class="header_contents">
+        <input type="checkbox" id="check">
+        <label for="check" class="check_btn"><i class="fa fa-bars"></i></label>
+        <img class="logo" src="img/movie_site_logo.avif" alt="">
 
-    <head class="header">
+        <ul class="home_foll_cat">
+            <li><a unselectable="on" href="#home_page">Anasayfa</a></li>
+            <li><a unselectable="on" href="#category_page">Kategoriler</a></li>
+            <li><a unselectable="on" href="#com_page">İletişim</a></li>
+        </ul>
 
-        <div class="header_contents">
-
-            <img class="logo" src="img/movie_site_logo.avif" alt="">
-
-            <ul class="home_foll_cat">
-                <li><a unselectable="on" href="#">Home</a></li>
-                <li><a unselectable="on" href="#">Following</a></li>
-                <li><a unselectable="on" href="#">Categories</a></li>
-            </ul>
-
-            <div class="search">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path fill="currentColor"
-                        d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39M11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7" />
-                </svg>
-                <!--<span class="material-symbols-outlined">search</span>-->
-                <input class="search_input" type="search" placeholder="Search">
-            </div>
-
-            <div class="log_sign_btns">
-                <section>
-                    <button class="log">Log in</button>
-                </section>
-                <button class="sign">Sign up</button>
-            </div>
+        <div class="search">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                    d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39M11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7" />
+            </svg>
+            <!--<span class="material-symbols-outlined">search</span>-->
+            <input class="search_input" type="search" placeholder="Search">
         </div>
-    </head>
 
-    <section class="slider_container">
+        <div class="log_sign_btns">
+            <section>
+                <button class="log">Log in</button>
+            </section>
+            <button class="sign">Sign up</button>
+        </div>
+    </div>
+
+    <section id="home_page" class="slider_container">
         <div class="slider_wrapper">
             <div class="slider">
                 <div class="slide">
@@ -117,7 +114,7 @@
         </div>
     </section>
 
-    <div class="movie_category_tab_container">
+    <!--<div class="movie_category_tab_container">
         <div class="tab_box">
             <div class="tab_icon_btn">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -553,13 +550,13 @@
 
             </div>
         </div>
-    </div>
+    </div>-->
 
 
 
 
     <!-- Category Slider -->
-    <section class="movie_category_slider">
+    <section id="#category_page" class="movie_category_slider">
         <div class="movie-slide">
             <div class="container-title">
                 <span>Komediler</span>
@@ -849,8 +846,8 @@
 
 
 
-    <!-- Footer -->
-    <footer class="mainfooter" role="contentinfo">
+    <!-- Footer 
+    <footer id="#com_page" class="mainfooter" role="contentinfo">
         <div class="footer-middle">
             <div class="container">
                 <div class="row">
@@ -869,7 +866,7 @@
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
-                        <!--Column1-->
+                        
                         <div class="footer-pad">
                             <ul class="list-unstyled">
                                 <li><a href="#"></a></li>
@@ -884,7 +881,7 @@
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
-                        <!--Column1-->
+                        
                         <div class="footer-pad">
                             <ul class="list-unstyled">
                                 <li><a href="#">Kısa Filmler</a></li>
@@ -917,8 +914,61 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> 
+-->
 
+    <section class="footer">
+        <div class="footer_content">
+            <a id="footer_logo_header" href="#" class="footer_header"><strong>POPCORN</strong>DREAMS</a>
+
+            <iframe id="iframe-0.6049931788632044" width="100%"
+                src="https://widget.clutch.co/widgets/get/2/darkbg?ref_domain=www.vantaworks.com&amp;uid=1112763&amp;ref_path=/"
+                height="50px" style="border: none; display: block; margin-top: 20px;"
+                title="recaptcha-setup2 Dark"></iframe>
+
+            <div class="footer_logo_div">
+                <a href="#" class="footer_logo_a">
+                    <img src="img/movie_site_logo.avif" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="footer_content">
+            <ul class="list-unstyled">
+                <li><a href="#"></a></li>
+                <li><a href="#">Aksiyon</a></li>
+                <li><a href="#">Belgeseller</a></li>
+                <li><a href="#">Bilim Kurgu</a></li>
+                <li><a href="#">Çocuk ve Aile</a></li>
+                <li><a href="#">Dramalar</a></li>
+                <li><a href="#">Fantastik</a></li>
+                <li><a href="#">Gerilim</a></li>
+            </ul>
+        </div>
+
+        <div class="footer_content">
+            <ul class="list-unstyled">
+                <li><a href="#">Kısa Filmler</a></li>
+                <li><a href="#">Klasikler</a></li>
+                <li><a href="#">Komediler</a></li>
+                <li><a href="#">Ödüllü Yapımlar</a></li>
+                <li><a href="#">Yerli Filmler</a></li>
+                <li><a href="#">Romantizm</a></li>
+                <li><a href="#">Spor</a></li>
+
+            </ul>
+        </div>
+
+        <div class="footer_content">
+            <div class="icons">
+                <a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                <a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a>
+                <a href="#" class="icoWhatsapp" title="Whatsapp"><i class="fa fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
 
     <script src="script.js"></script>
 </body>
