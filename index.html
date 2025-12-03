@@ -23,6 +23,8 @@
 
 <body>
 
+    <!-- Header -->
+
     <div class="header_contents">
         <input type="checkbox" id="check">
         <img class="logo" src="img/movie_site_logo.avif" alt="">
@@ -53,6 +55,8 @@
 
 
     </div>
+
+    <!-- Home page slider -->
 
     <section id="home_page" class="slider_container">
         <div class="slider_wrapper">
@@ -114,448 +118,8 @@
         </div>
     </section>
 
-    <!--<div class="movie_category_tab_container">
-        <div class="tab_box">
-            <div class="tab_icon_btn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                        stroke-miterlimit="10" stroke-width="1">
-                        <path
-                            d="m11.5 14.5l4-4l-2-2.5l-2 1.5l-2-1.5l-2 2.5zm-1.562 3.125L7.5 23.5l-2.5-3H.5l5-4m7.562 1.125L15.5 23.5l2.5-3h4.5l-5-4" />
-                        <path d="M9 16.5H5.5V13l-3-2.5l3-2.5V4.5h3l3-3l3 3h3v3l3 3l-3 2.5v3.5H14l-2.5 3z" />
-                    </g>
-                </svg>
-                <button class="tab_btn active">Top 10</button>
-            </div>
-
-            <div class="tab_icon_btn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                    <path fill="currentColor" fill-rule="evenodd"
-                        d="M5.905.28A8 8 0 0 1 14.5 3.335V1.75a.75.75 0 0 1 1.5 0V6h-4.25a.75.75 0 0 1 0-1.5h1.727a6.5 6.5 0 1 0 .526 5.994a.75.75 0 1 1 1.385.575A8 8 0 1 1 5.905.279Z"
-                        clip-rule="evenodd" />
-                </svg>
-                <button class="tab_btn">Tekrar İzle</button>
-            </div>
-
-            <div class="tab_icon_btn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
-                    <path fill="currentColor"
-                        d="M512 0C229.232 0 0 229.232 0 512c0 282.784 229.232 512 512 512c282.784 0 512-229.216 512-512C1024 229.232 794.784 0 512 0m0 961.008c-247.024 0-448-201.984-448-449.01c0-247.024 200.976-448 448-448s448 200.977 448 448s-200.976 449.01-448 449.01M736 480H544V288c0-17.664-14.336-32-32-32s-32 14.336-32 32v192H288c-17.664 0-32 14.336-32 32s14.336 32 32 32h192v192c0 17.664 14.336 32 32 32s32-14.336 32-32V544h192c17.664 0 32-14.336 32-32s-14.336-32-32-32" />
-                </svg>
-                <button class="tab_btn">İzleme Listem</button>
-            </div>
-
-
-            <div class="tab_btn_line"></div>
-        </div>
-    </div>
-
-    <div class="tab_content ">
-        <div class="content active">
-            <div class="movie_category_sliders">
-
-                <div class="category_slider">
-                    <div class="category_slider_head">
-                        <div class="left_right_btns">
-                            <button class="prev_btn_scroll"><img src="img/chevron_left.png" alt=""
-                                    class="left_icon_png"></button>
-                            <button class="next_btn_scroll"><img src="img/chevron_right.png" alt=""
-                                    class="right_icon_png"></button>
-                        </div>
-                    </div>
-                    <div class="category_cards">
-                        <div class="card">
-                            <img class="card_img" src="img/comedy_img2.jpeg" alt="">
-                            <button class="watch_btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                    <path fill="currentColor"
-                                        d="M12 20h8v2h-8C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10a9.96 9.96 0 0 1-2 6h-2.708A8 8 0 1 0 12 20m0-10a2 2 0 1 1 0-4a2 2 0 0 1 0 4m-4 4a2 2 0 1 1 0-4a2 2 0 0 1 0 4m8 0a2 2 0 1 1 0-4a2 2 0 0 1 0 4m-4 4a2 2 0 1 1 0-4a2 2 0 0 1 0 4" />
-                                </svg>
-                                İzle</button>
-                        </div>
-
-                        <div class="card">
-                            <img class="card_img" src="img/comedy_img4.jpeg" alt="">
-                            <button class="watch_btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                    <path fill="currentColor"
-                                        d="M12 20h8v2h-8C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10a9.96 9.96 0 0 1-2 6h-2.708A8 8 0 1 0 12 20m0-10a2 2 0 1 1 0-4a2 2 0 0 1 0 4m-4 4a2 2 0 1 1 0-4a2 2 0 0 1 0 4m8 0a2 2 0 1 1 0-4a2 2 0 0 1 0 4m-4 4a2 2 0 1 1 0-4a2 2 0 0 1 0 4" />
-                                </svg>
-                                İzle</button>
-                        </div>
-
-                        <div class="card">
-                            <img class="card_img" src="img/comedy_img.jpg" alt="">
-                            <button class="watch_btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                    <path fill="currentColor"
-                                        d="M12 20h8v2h-8C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10a9.96 9.96 0 0 1-2 6h-2.708A8 8 0 1 0 12 20m0-10a2 2 0 1 1 0-4a2 2 0 0 1 0 4m-4 4a2 2 0 1 1 0-4a2 2 0 0 1 0 4m8 0a2 2 0 1 1 0-4a2 2 0 0 1 0 4m-4 4a2 2 0 1 1 0-4a2 2 0 0 1 0 4" />
-                                </svg>
-                                İzle</button>
-                        </div>
-
-                        <div class="card">
-                            <img class="card_img" src="img/komedi_img5.jpeg" alt="">
-                            <button class="watch_btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                    <path fill="currentColor"
-                                        d="M12 20h8v2h-8C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10a9.96 9.96 0 0 1-2 6h-2.708A8 8 0 1 0 12 20m0-10a2 2 0 1 1 0-4a2 2 0 0 1 0 4m-4 4a2 2 0 1 1 0-4a2 2 0 0 1 0 4m8 0a2 2 0 1 1 0-4a2 2 0 0 1 0 4m-4 4a2 2 0 1 1 0-4a2 2 0 0 1 0 4" />
-                                </svg>
-                                İzle</button>
-                        </div>
-
-                        <div class="card">
-                            <img class="card_img" src="img/komedi_img4.jpg" alt="">
-                            <button class="watch_btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                    <path fill="currentColor"
-                                        d="M12 20h8v2h-8C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10a9.96 9.96 0 0 1-2 6h-2.708A8 8 0 1 0 12 20m0-10a2 2 0 1 1 0-4a2 2 0 0 1 0 4m-4 4a2 2 0 1 1 0-4a2 2 0 0 1 0 4m8 0a2 2 0 1 1 0-4a2 2 0 0 1 0 4m-4 4a2 2 0 1 1 0-4a2 2 0 0 1 0 4" />
-                                </svg>
-                                İzle</button>
-                        </div>
-
-                        <div class="card">
-                            <img class="card_img" src="img/komedi_img3.jpg" alt="">
-                            <button class="watch_btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                    <path fill="currentColor"
-                                        d="M12 20h8v2h-8C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10a9.96 9.96 0 0 1-2 6h-2.708A8 8 0 1 0 12 20m0-10a2 2 0 1 1 0-4a2 2 0 0 1 0 4m-4 4a2 2 0 1 1 0-4a2 2 0 0 1 0 4m8 0a2 2 0 1 1 0-4a2 2 0 0 1 0 4m-4 4a2 2 0 1 1 0-4a2 2 0 0 1 0 4" />
-                                </svg>
-                                İzle</button>
-                        </div>
-
-                        <div class="card">
-                            <img class="card_img" src="img/komedi_img5.jpeg" alt="">
-                            <button class="watch_btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                    <path fill="currentColor"
-                                        d="M12 20h8v2h-8C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10a9.96 9.96 0 0 1-2 6h-2.708A8 8 0 1 0 12 20m0-10a2 2 0 1 1 0-4a2 2 0 0 1 0 4m-4 4a2 2 0 1 1 0-4a2 2 0 0 1 0 4m8 0a2 2 0 1 1 0-4a2 2 0 0 1 0 4m-4 4a2 2 0 1 1 0-4a2 2 0 0 1 0 4" />
-                                </svg>
-                                İzle</button>
-                        </div>
-
-                    </div>
-
-
-                </div>
-
-            </div>
-        </div>
-        <div class="content">
-            <div class="movie_category_sliders">
-
-                <div class="category_slider">
-                    <div class="category_slider_head">
-                        <div class="left_right_btns">
-                            <button class="prev_btn_scroll"><img src="img/chevron_left.png" alt=""
-                                    class="left_icon_png"></button>
-                            <button class="next_btn_scroll"><img src="img/chevron_right.png" alt=""
-                                    class="right_icon_png"></button>
-                        </div>
-                    </div>
-                    <div class="category_cards">
-                        <div class="card">
-                            <img class="card_img" src="img/komedi_img4.jpg" alt="">
-                            <button class="watch_btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                    <path fill="currentColor"
-                                        d="M12 20h8v2h-8C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10a9.96 9.96 0 0 1-2 6h-2.708A8 8 0 1 0 12 20m0-10a2 2 0 1 1 0-4a2 2 0 0 1 0 4m-4 4a2 2 0 1 1 0-4a2 2 0 0 1 0 4m8 0a2 2 0 1 1 0-4a2 2 0 0 1 0 4m-4 4a2 2 0 1 1 0-4a2 2 0 0 1 0 4" />
-                                </svg>
-                                İzle</button>
-                        </div>
-
-                        <div class="card">
-                            <img class="card_img" src="img/komedi_img4.jpg" alt="">
-                            <button class="watch_btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                    <path fill="currentColor"
-                                        d="M12 20h8v2h-8C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10a9.96 9.96 0 0 1-2 6h-2.708A8 8 0 1 0 12 20m0-10a2 2 0 1 1 0-4a2 2 0 0 1 0 4m-4 4a2 2 0 1 1 0-4a2 2 0 0 1 0 4m8 0a2 2 0 1 1 0-4a2 2 0 0 1 0 4m-4 4a2 2 0 1 1 0-4a2 2 0 0 1 0 4" />
-                                </svg>
-                                İzle</button>
-                        </div>
-
-                        <div class="card">
-                            <img class="card_img" src="img/komedi_img4.jpg" alt="">
-                            <button class="watch_btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                    <path fill="currentColor"
-                                        d="M12 20h8v2h-8C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10a9.96 9.96 0 0 1-2 6h-2.708A8 8 0 1 0 12 20m0-10a2 2 0 1 1 0-4a2 2 0 0 1 0 4m-4 4a2 2 0 1 1 0-4a2 2 0 0 1 0 4m8 0a2 2 0 1 1 0-4a2 2 0 0 1 0 4m-4 4a2 2 0 1 1 0-4a2 2 0 0 1 0 4" />
-                                </svg>
-                                İzle</button>
-                        </div>
-
-                        <div class="card">
-                            <img class="card_img" src="img/komedi_img4.jpg" alt="">
-                            <button class="watch_btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                    <path fill="currentColor"
-                                        d="M12 20h8v2h-8C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10a9.96 9.96 0 0 1-2 6h-2.708A8 8 0 1 0 12 20m0-10a2 2 0 1 1 0-4a2 2 0 0 1 0 4m-4 4a2 2 0 1 1 0-4a2 2 0 0 1 0 4m8 0a2 2 0 1 1 0-4a2 2 0 0 1 0 4m-4 4a2 2 0 1 1 0-4a2 2 0 0 1 0 4" />
-                                </svg>
-                                İzle</button>
-                        </div>
-
-                        <div class="card">
-                            <img class="card_img" src="img/komedi_img4.jpg" alt="">
-                            <button class="watch_btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                    <path fill="currentColor"
-                                        d="M12 20h8v2h-8C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10a9.96 9.96 0 0 1-2 6h-2.708A8 8 0 1 0 12 20m0-10a2 2 0 1 1 0-4a2 2 0 0 1 0 4m-4 4a2 2 0 1 1 0-4a2 2 0 0 1 0 4m8 0a2 2 0 1 1 0-4a2 2 0 0 1 0 4m-4 4a2 2 0 1 1 0-4a2 2 0 0 1 0 4" />
-                                </svg>
-                                İzle</button>
-                        </div>
-
-                    </div>
-
-
-                </div>
-
-            </div>
-        </div>
-
-        <div class="content">
-            <div class="movie_category_sliders">
-
-                <div class="category_slider">
-                    <div class="category_slider_head">
-                        <div class="left_right_btns">
-                            <button class="prev_btn_scroll"><img src="img/chevron_left.png" alt=""
-                                    class="left_icon_png"></button>
-                            <button class="next_btn_scroll"><img src="img/chevron_right.png" alt=""
-                                    class="right_icon_png"></button>
-                        </div>
-                    </div>
-                    <div class="category_cards">
-                        <div class="card">
-                            <img class="card_img" src="img/komedi_img4.jpg" alt="">
-                            <button class="watch_btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                    <path fill="currentColor"
-                                        d="M12 20h8v2h-8C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10a9.96 9.96 0 0 1-2 6h-2.708A8 8 0 1 0 12 20m0-10a2 2 0 1 1 0-4a2 2 0 0 1 0 4m-4 4a2 2 0 1 1 0-4a2 2 0 0 1 0 4m8 0a2 2 0 1 1 0-4a2 2 0 0 1 0 4m-4 4a2 2 0 1 1 0-4a2 2 0 0 1 0 4" />
-                                </svg>
-                                İzle</button>
-                        </div>
-
-                        <div class="card">
-                            <img class="card_img" src="img/komedi_img4.jpg" alt="">
-                            <button class="watch_btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                    <path fill="currentColor"
-                                        d="M12 20h8v2h-8C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10a9.96 9.96 0 0 1-2 6h-2.708A8 8 0 1 0 12 20m0-10a2 2 0 1 1 0-4a2 2 0 0 1 0 4m-4 4a2 2 0 1 1 0-4a2 2 0 0 1 0 4m8 0a2 2 0 1 1 0-4a2 2 0 0 1 0 4m-4 4a2 2 0 1 1 0-4a2 2 0 0 1 0 4" />
-                                </svg>
-                                İzle</button>
-                        </div>
-
-                        <div class="card">
-                            <img class="card_img" src="img/komedi_img4.jpg" alt="">
-                            <button class="watch_btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                    <path fill="currentColor"
-                                        d="M12 20h8v2h-8C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10a9.96 9.96 0 0 1-2 6h-2.708A8 8 0 1 0 12 20m0-10a2 2 0 1 1 0-4a2 2 0 0 1 0 4m-4 4a2 2 0 1 1 0-4a2 2 0 0 1 0 4m8 0a2 2 0 1 1 0-4a2 2 0 0 1 0 4m-4 4a2 2 0 1 1 0-4a2 2 0 0 1 0 4" />
-                                </svg>
-                                İzle</button>
-                        </div>
-
-                        <div class="card">
-                            <img class="card_img" src="img/komedi_img4.jpg" alt="">
-                            <button class="watch_btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                    <path fill="currentColor"
-                                        d="M12 20h8v2h-8C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10a9.96 9.96 0 0 1-2 6h-2.708A8 8 0 1 0 12 20m0-10a2 2 0 1 1 0-4a2 2 0 0 1 0 4m-4 4a2 2 0 1 1 0-4a2 2 0 0 1 0 4m8 0a2 2 0 1 1 0-4a2 2 0 0 1 0 4m-4 4a2 2 0 1 1 0-4a2 2 0 0 1 0 4" />
-                                </svg>
-                                İzle</button>
-                        </div>
-
-                        <div class="card">
-                            <img class="card_img" src="img/komedi_img4.jpg" alt="">
-                            <button class="watch_btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                    <path fill="currentColor"
-                                        d="M12 20h8v2h-8C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10a9.96 9.96 0 0 1-2 6h-2.708A8 8 0 1 0 12 20m0-10a2 2 0 1 1 0-4a2 2 0 0 1 0 4m-4 4a2 2 0 1 1 0-4a2 2 0 0 1 0 4m8 0a2 2 0 1 1 0-4a2 2 0 0 1 0 4m-4 4a2 2 0 1 1 0-4a2 2 0 0 1 0 4" />
-                                </svg>
-                                İzle</button>
-                        </div>
-
-                    </div>
-
-
-                </div>
-
-            </div>
-        </div>
-
-        <div class="content">
-            <div class="movie_category_sliders">
-
-                <div class="category_slider">
-                    <div class="category_slider_head">
-                        <div class="left_right_btns">
-                            <button class="prev_btn_scroll"><img src="img/chevron_left.png" alt=""
-                                    class="left_icon_png"></button>
-                            <button class="next_btn_scroll"><img src="img/chevron_right.png" alt=""
-                                    class="right_icon_png"></button>
-                        </div>
-                    </div>
-                    <div class="category_cards">
-                        <div class="card">
-                            <img class="card_img" src="img/komedi_img4.jpg" alt="">
-                            <button class="watch_btn">
-                                <img class="play_icon" src="img/play.png" alt="">
-                                İzle</button>
-                        </div>
-
-                        <div class="card">
-                            <img class="card_img" src="img/komedi_img4.jpg" alt="">
-                            <button class="watch_btn">
-                                <img class="play_icon" src="img/play.png" alt="">
-                                İzle</button>
-                        </div>
-
-                        <div class="card">
-                            <img class="card_img" src="img/komedi_img4.jpg" alt="">
-                            <button class="watch_btn">
-                                <img class="play_icon" src="img/play.png" alt="">
-                                İzle</button>
-                        </div>
-
-                        <div class="card">
-                            <img class="card_img" src="img/komedi_img4.jpg" alt="">
-                            <button class="watch_btn">
-                                <img class="play_icon" src="img/play.png" alt="">
-                                İzle</button>
-                        </div>
-
-                        <div class="card">
-                            <img class="card_img" src="img/komedi_img4.jpg" alt="">
-                            <button class="watch_btn">
-                                <img class="play_icon" src="img/play.png" alt="">
-                                İzle</button>
-                        </div>
-
-                    </div>
-
-
-                </div>
-
-            </div>
-        </div>
-
-        <div class="content">
-            <div class="movie_category_sliders">
-
-                <div class="category_slider">
-                    <div class="category_slider_head">
-                        <div class="left_right_btns">
-                            <button class="prev_btn_scroll"><img src="img/chevron_left.png" alt=""
-                                    class="left_icon_png"></button>
-                            <button class="next_btn_scroll"><img src="img/chevron_right.png" alt=""
-                                    class="right_icon_png"></button>
-                        </div>
-                    </div>
-                    <div class="category_cards">
-                        <div class="card">
-                            <img class="card_img" src="img/komedi_img4.jpg" alt="">
-                            <button class="watch_btn">
-                                <img class="play_icon" src="img/play.png" alt="">
-                                İzle</button>
-                        </div>
-
-                        <div class="card">
-                            <img class="card_img" src="img/komedi_img4.jpg" alt="">
-                            <button class="watch_btn">
-                                <img class="play_icon" src="img/play.png" alt="">
-                                İzle</button>
-                        </div>
-
-                        <div class="card">
-                            <img class="card_img" src="img/komedi_img4.jpg" alt="">
-                            <button class="watch_btn">
-                                <img class="play_icon" src="img/play.png" alt="">
-                                İzle</button>
-                        </div>
-
-                        <div class="card">
-                            <img class="card_img" src="img/komedi_img4.jpg" alt="">
-                            <button class="watch_btn">
-                                <img class="play_icon" src="img/play.png" alt="">
-                                İzle</button>
-                        </div>
-
-                        <div class="card">
-                            <img class="card_img" src="img/komedi_img4.jpg" alt="">
-                            <button class="watch_btn">
-                                <img class="play_icon" src="img/play.png" alt="">
-                                İzle</button>
-                        </div>
-
-                    </div>
-
-
-                </div>
-
-            </div>
-        </div>
-
-        <div class="content">
-            <div class="movie_category_sliders">
-
-                <div class="category_slider">
-                    <div class="category_slider_head">
-                        <div class="left_right_btns">
-                            <button class="prev_btn_scroll"><img src="img/chevron_left.png" alt=""
-                                    class="left_icon_png"></button>
-                            <button class="next_btn_scroll"><img src="img/chevron_right.png" alt=""
-                                    class="right_icon_png"></button>
-                        </div>
-                    </div>
-                    <div class="category_cards">
-                        <div class="card">
-                            <img class="card_img" src="img/komedi_img4.jpg" alt="">
-                            <button class="watch_btn">
-                                <img class="play_icon" src="img/play.png" alt="">
-                                İzle</button>
-                        </div>
-
-                        <div class="card">
-                            <img class="card_img" src="img/komedi_img4.jpg" alt="">
-                            <button class="watch_btn">
-                                <img class="play_icon" src="img/play.png" alt="">
-                                İzle</button>
-                        </div>
-
-                        <div class="card">
-                            <img class="card_img" src="img/komedi_img4.jpg" alt="">
-                            <button class="watch_btn">
-                                <img class="play_icon" src="img/play.png" alt="">
-                                İzle</button>
-                        </div>
-
-                        <div class="card">
-                            <img class="card_img" src="img/komedi_img4.jpg" alt="">
-                            <button class="watch_btn">
-                                <img class="play_icon" src="img/play.png" alt="">
-                                İzle</button>
-                        </div>
-
-                        <div class="card">
-                            <img class="card_img" src="img/komedi_img4.jpg" alt="">
-                            <button class="watch_btn">
-                                <img class="play_icon" src="img/play.png" alt="">
-                                İzle</button>
-                        </div>
-
-                    </div>
-
-
-                </div>
-
-            </div>
-        </div>
-    </div>-->
-
-
-
-
     <!-- Category Slider -->
+
     <section id="#category_page" class="movie_category_slider">
         <div class="movie-slide">
             <div class="container-title">
@@ -566,25 +130,10 @@
 
                 <div class="movie-info">
                     <img alt="movie poster" src="img/comedy_img.jpg">
-                    <!--<div class="movie-name">Brahmastra part 1: Shiva</div>-->
-                    <!--<div class="review"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                            viewBox="0 0 24 24">
-                            <g fill="none">
-                                <path d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12" />
-                                <path
-                                    d="M10 7a2 2 0 1 1 4 0a2 2 0 0 1-4 0m5 5a2 2 0 1 1 4 0a2 2 0 0 1-4 0M5 12a2 2 0 1 1 4 0a2 2 0 0 1-4 0m5 5a2 2 0 1 1 4 0a2 2 0 0 1-4 0" />
-                                <path stroke="currentColor" stroke-linecap="square" stroke-width="2"
-                                    d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10a9.97 9.97 0 0 1-2.859 7A9.97 9.97 0 0 1 12 22Zm0 0h11" />
-                                <path stroke="currentColor" stroke-linecap="square" stroke-width="2"
-                                    d="M10 7a2 2 0 1 1 4 0a2 2 0 0 1-4 0Zm5 5a2 2 0 1 1 4 0a2 2 0 0 1-4 0ZM5 12a2 2 0 1 1 4 0a2 2 0 0 1-4 0Zm5 5a2 2 0 1 1 4 0a2 2 0 0 1-4 0Z" />
-                            </g>
-                        </svg>İzle </div>-->
                 </div>
 
                 <div class="movie-info">
                     <img alt="movie poster" src="img/comedy_img1.jpeg">
-                    <!--<div class="movie-name">Bachchan Pandey</div>-->
-                    <!--<div class="review"><i class="fa-solid fa-heart"></i>7.5/10</div>-->
                 </div>
 
                 <div class="movie-info">
@@ -623,25 +172,10 @@
 
                 <div class="movie-info">
                     <img alt="movie poster" src="img/action_img1.jpg">
-                    <!--<div class="movie-name">Brahmastra part 1: Shiva</div>-->
-                    <!--<div class="review"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                            viewBox="0 0 24 24">
-                            <g fill="none">
-                                <path d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12" />
-                                <path
-                                    d="M10 7a2 2 0 1 1 4 0a2 2 0 0 1-4 0m5 5a2 2 0 1 1 4 0a2 2 0 0 1-4 0M5 12a2 2 0 1 1 4 0a2 2 0 0 1-4 0m5 5a2 2 0 1 1 4 0a2 2 0 0 1-4 0" />
-                                <path stroke="currentColor" stroke-linecap="square" stroke-width="2"
-                                    d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10a9.97 9.97 0 0 1-2.859 7A9.97 9.97 0 0 1 12 22Zm0 0h11" />
-                                <path stroke="currentColor" stroke-linecap="square" stroke-width="2"
-                                    d="M10 7a2 2 0 1 1 4 0a2 2 0 0 1-4 0Zm5 5a2 2 0 1 1 4 0a2 2 0 0 1-4 0ZM5 12a2 2 0 1 1 4 0a2 2 0 0 1-4 0Zm5 5a2 2 0 1 1 4 0a2 2 0 0 1-4 0Z" />
-                            </g>
-                        </svg>İzle </div>-->
                 </div>
 
                 <div class="movie-info">
                     <img alt="movie poster" src="img/action_img2.jpg">
-                    <!--<div class="movie-name">Bachchan Pandey</div>-->
-                    <!--<div class="review"><i class="fa-solid fa-heart"></i>7.5/10</div>-->
                 </div>
 
                 <div class="movie-info">
@@ -680,25 +214,12 @@
 
                 <div class="movie-info">
                     <img alt="movie poster" src="img/fantastic_img1.jpg">
-                    <!--<div class="movie-name">Brahmastra part 1: Shiva</div>-->
-                    <!--<div class="review"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                            viewBox="0 0 24 24">
-                            <g fill="none">
-                                <path d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12" />
-                                <path
-                                    d="M10 7a2 2 0 1 1 4 0a2 2 0 0 1-4 0m5 5a2 2 0 1 1 4 0a2 2 0 0 1-4 0M5 12a2 2 0 1 1 4 0a2 2 0 0 1-4 0m5 5a2 2 0 1 1 4 0a2 2 0 0 1-4 0" />
-                                <path stroke="currentColor" stroke-linecap="square" stroke-width="2"
-                                    d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10a9.97 9.97 0 0 1-2.859 7A9.97 9.97 0 0 1 12 22Zm0 0h11" />
-                                <path stroke="currentColor" stroke-linecap="square" stroke-width="2"
-                                    d="M10 7a2 2 0 1 1 4 0a2 2 0 0 1-4 0Zm5 5a2 2 0 1 1 4 0a2 2 0 0 1-4 0ZM5 12a2 2 0 1 1 4 0a2 2 0 0 1-4 0Zm5 5a2 2 0 1 1 4 0a2 2 0 0 1-4 0Z" />
-                            </g>
-                        </svg>İzle </div>-->
+
                 </div>
 
                 <div class="movie-info">
                     <img alt="movie poster" src="img/fantastic_img2.jpg">
-                    <!--<div class="movie-name">Bachchan Pandey</div>-->
-                    <!--<div class="review"><i class="fa-solid fa-heart"></i>7.5/10</div>-->
+
                 </div>
 
                 <div class="movie-info">
@@ -727,7 +248,6 @@
         </div>
     </section>
 
-
     <section class="movie_category_slider">
         <div class="movie-slide">
             <div class="container-title">
@@ -738,25 +258,10 @@
 
                 <div class="movie-info">
                     <img alt="movie poster" src="img/kids_img1.webp">
-                    <!--<div class="movie-name">Brahmastra part 1: Shiva</div>-->
-                    <!--<div class="review"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                            viewBox="0 0 24 24">
-                            <g fill="none">
-                                <path d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12" />
-                                <path
-                                    d="M10 7a2 2 0 1 1 4 0a2 2 0 0 1-4 0m5 5a2 2 0 1 1 4 0a2 2 0 0 1-4 0M5 12a2 2 0 1 1 4 0a2 2 0 0 1-4 0m5 5a2 2 0 1 1 4 0a2 2 0 0 1-4 0" />
-                                <path stroke="currentColor" stroke-linecap="square" stroke-width="2"
-                                    d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10a9.97 9.97 0 0 1-2.859 7A9.97 9.97 0 0 1 12 22Zm0 0h11" />
-                                <path stroke="currentColor" stroke-linecap="square" stroke-width="2"
-                                    d="M10 7a2 2 0 1 1 4 0a2 2 0 0 1-4 0Zm5 5a2 2 0 1 1 4 0a2 2 0 0 1-4 0ZM5 12a2 2 0 1 1 4 0a2 2 0 0 1-4 0Zm5 5a2 2 0 1 1 4 0a2 2 0 0 1-4 0Z" />
-                            </g>
-                        </svg>İzle </div>-->
                 </div>
 
                 <div class="movie-info">
                     <img alt="movie poster" src="img/kids_img2.jpg">
-                    <!--<div class="movie-name">Bachchan Pandey</div>-->
-                    <!--<div class="review"><i class="fa-solid fa-heart"></i>7.5/10</div>-->
                 </div>
 
                 <div class="movie-info">
@@ -785,7 +290,6 @@
         </div>
     </section>
 
-
     <section class="movie_category_slider">
         <div class="movie-slide">
             <div class="container-title">
@@ -796,25 +300,10 @@
 
                 <div class="movie-info">
                     <img alt="movie poster" src="img/documentary_img1.jpeg">
-                    <!--<div class="movie-name">Brahmastra part 1: Shiva</div>-->
-                    <!--<div class="review"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                            viewBox="0 0 24 24">
-                            <g fill="none">
-                                <path d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12" />
-                                <path
-                                    d="M10 7a2 2 0 1 1 4 0a2 2 0 0 1-4 0m5 5a2 2 0 1 1 4 0a2 2 0 0 1-4 0M5 12a2 2 0 1 1 4 0a2 2 0 0 1-4 0m5 5a2 2 0 1 1 4 0a2 2 0 0 1-4 0" />
-                                <path stroke="currentColor" stroke-linecap="square" stroke-width="2"
-                                    d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10a9.97 9.97 0 0 1-2.859 7A9.97 9.97 0 0 1 12 22Zm0 0h11" />
-                                <path stroke="currentColor" stroke-linecap="square" stroke-width="2"
-                                    d="M10 7a2 2 0 1 1 4 0a2 2 0 0 1-4 0Zm5 5a2 2 0 1 1 4 0a2 2 0 0 1-4 0ZM5 12a2 2 0 1 1 4 0a2 2 0 0 1-4 0Zm5 5a2 2 0 1 1 4 0a2 2 0 0 1-4 0Z" />
-                            </g>
-                        </svg>İzle </div>-->
                 </div>
 
                 <div class="movie-info">
                     <img alt="movie poster" src="img/documentary_img2.png">
-                    <!--<div class="movie-name">Bachchan Pandey</div>-->
-                    <!--<div class="review"><i class="fa-solid fa-heart"></i>7.5/10</div>-->
                 </div>
 
                 <div class="movie-info">
@@ -843,79 +332,7 @@
         </div>
     </section>
 
-
-
-
-    <!-- Footer 
-    <footer id="#com_page" class="mainfooter" role="contentinfo">
-        <div class="footer-middle">
-            <div class="container">
-                <div class="row">
-                    <div class="footer_header_logo">
-                        <a href="#" class="footer_header"><strong>POPCORN</strong>DREAMS</a>
-
-                        <iframe id="iframe-0.6049931788632044" width="100%"
-                            src="https://widget.clutch.co/widgets/get/2/darkbg?ref_domain=www.vantaworks.com&amp;uid=1112763&amp;ref_path=/"
-                            height="50px" style="border: none; display: block; margin-top: 20px;"
-                            title="recaptcha-setup2 Dark"></iframe>
-
-                        <div class="footer_logo_div">
-                            <a href="#" class="footer_logo_a">
-                                <img src="img/movie_site_logo.avif" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        
-                        <div class="footer-pad">
-                            <ul class="list-unstyled">
-                                <li><a href="#"></a></li>
-                                <li><a href="#">Aksiyon</a></li>
-                                <li><a href="#">Belgeseller</a></li>
-                                <li><a href="#">Bilim Kurgu</a></li>
-                                <li><a href="#">Çocuk ve Aile</a></li>
-                                <li><a href="#">Dramalar</a></li>
-                                <li><a href="#">Fantastik</a></li>
-                                <li><a href="#">Gerilim</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        
-                        <div class="footer-pad">
-                            <ul class="list-unstyled">
-                                <li><a href="#">Kısa Filmler</a></li>
-                                <li><a href="#">Klasikler</a></li>
-                                <li><a href="#">Komediler</a></li>
-                                <li><a href="#">Ödüllü Yapımlar</a></li>
-                                <li><a href="#">Yerli Filmler</a></li>
-                                <li><a href="#">Romantizm</a></li>
-                                <li><a href="#">Spor</a></li>
-
-                            </ul>
-                        </div>
-                    </div>
-
-
-                    <div class="col-md-3">
-                        <ul class="social-network social-circle">
-                            <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                            <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a>
-                            </li>
-                            <li><a href="#" class="icoWhatsapp" title="Whatsapp"><i class="fa fa-whatsapp"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer> 
--->
+    <!-- Footer -->
 
     <section class="footer">
         <div class="footer_content">
