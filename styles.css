@@ -8,6 +8,10 @@ html body {
     touch-action: pan-x pan-y;
 }
 
+body.modal-open {
+    overflow: hidden;
+}
+
 img {
     touch-action: manipulation;
     pointer-events: none;
@@ -70,6 +74,7 @@ body::-webkit-scrollbar {
     margin-bottom: 0;
     line-height: 45px;
     display: none;
+    margin-left: 10px;
 }
 
 #check {
@@ -140,7 +145,7 @@ input[type="search"]::-webkit-search-cancel-button {
     background: transparent;
     font-size: 15px;
     color: white;
-    width: 80px;
+    width: 200px;
 }
 
 .search_input::placeholder {
