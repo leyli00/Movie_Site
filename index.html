@@ -2,8 +2,9 @@
 <html lang="en">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>Popcorn Dreams</title>
     <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css">
     <link rel="stylesheet" href="test.css">
@@ -27,27 +28,28 @@
         <label for="check" class="check_btn"><i class="fa fa-bars"></i></label>
         <img class="logo" src="img/movie_site_logo.avif" alt="">
 
+
         <ul class="home_foll_cat">
             <li><a unselectable="on" href="#home_page">Anasayfa</a></li>
             <li><a unselectable="on" href="#category_page">Kategoriler</a></li>
             <li><a unselectable="on" href="#com_page">İletişim</a></li>
+            <li>
+                <div class="search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39M11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7" />
+                    </svg>
+                    <input class="search_input" type="search" placeholder="Search">
+                </div>
+            </li>
         </ul>
-
-        <div class="search">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                <path fill="currentColor"
-                    d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39M11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7" />
-            </svg>
-            <!--<span class="material-symbols-outlined">search</span>-->
-            <input class="search_input" type="search" placeholder="Search">
-        </div>
-
         <div class="log_sign_btns">
             <section>
                 <button class="log">Log in</button>
             </section>
             <button class="sign">Sign up</button>
         </div>
+
     </div>
 
     <section id="home_page" class="slider_container">
@@ -57,48 +59,44 @@
                     <div class="gradient_effect"></div>
                     <img id="slide1" src="img/slider_wolfman_img.webp" alt="">
                     <h1 class="caption">Wolfman</h1>
-                    <button class="slider1_watch_btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <button class="slider1_watch_btn">İzle
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
                             <path fill="currentColor"
-                                d="M12 20h8v2h-8C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10a9.96 9.96 0 0 1-2 6h-2.708A8 8 0 1 0 12 20m0-10a2 2 0 1 1 0-4a2 2 0 0 1 0 4m-4 4a2 2 0 1 1 0-4a2 2 0 0 1 0 4m8 0a2 2 0 1 1 0-4a2 2 0 0 1 0 4m-4 4a2 2 0 1 1 0-4a2 2 0 0 1 0 4" />
-                        </svg>
-                        İzle</button>
+                                d="M271.653 1023.192c-8.685 0-17.573-3.432-24.238-10.097c-13.33-13.33-13.33-35.144 0-48.474L703.67 508.163L254.08 58.573c-13.33-13.331-13.33-35.145 0-48.475s35.143-13.33 48.473 0L776.38 483.925c13.33 13.33 13.33 35.143 0 48.473l-480.492 480.694c-6.665 6.665-15.551 10.099-24.236 10.099z" />
+                        </svg></button>
                 </div>
 
                 <div class="slide">
                     <div class="gradient_effect"></div>
                     <img id="slide2" src="img/slider_got2.jpg" alt="">
                     <h1 class="caption">Game of Thrones</h1>
-                    <button class="slider1_watch_btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <button class="slider1_watch_btn">İzle
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
                             <path fill="currentColor"
-                                d="M12 20h8v2h-8C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10a9.96 9.96 0 0 1-2 6h-2.708A8 8 0 1 0 12 20m0-10a2 2 0 1 1 0-4a2 2 0 0 1 0 4m-4 4a2 2 0 1 1 0-4a2 2 0 0 1 0 4m8 0a2 2 0 1 1 0-4a2 2 0 0 1 0 4m-4 4a2 2 0 1 1 0-4a2 2 0 0 1 0 4" />
-                        </svg>
-                        İzle</button>
+                                d="M271.653 1023.192c-8.685 0-17.573-3.432-24.238-10.097c-13.33-13.33-13.33-35.144 0-48.474L703.67 508.163L254.08 58.573c-13.33-13.331-13.33-35.145 0-48.475s35.143-13.33 48.473 0L776.38 483.925c13.33 13.33 13.33 35.143 0 48.473l-480.492 480.694c-6.665 6.665-15.551 10.099-24.236 10.099z" />
+                        </svg></button>
                 </div>
 
                 <div class="slide">
                     <div class="gradient_effect"></div>
                     <img id="slide3" src="img/slider_stranger_things3.webp" alt="">
                     <h1 class="caption">Stranger Things</h1>
-                    <button class="slider1_watch_btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <button class="slider1_watch_btn">İzle
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
                             <path fill="currentColor"
-                                d="M12 20h8v2h-8C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10a9.96 9.96 0 0 1-2 6h-2.708A8 8 0 1 0 12 20m0-10a2 2 0 1 1 0-4a2 2 0 0 1 0 4m-4 4a2 2 0 1 1 0-4a2 2 0 0 1 0 4m8 0a2 2 0 1 1 0-4a2 2 0 0 1 0 4m-4 4a2 2 0 1 1 0-4a2 2 0 0 1 0 4" />
-                        </svg>
-                        İzle</button>
+                                d="M271.653 1023.192c-8.685 0-17.573-3.432-24.238-10.097c-13.33-13.33-13.33-35.144 0-48.474L703.67 508.163L254.08 58.573c-13.33-13.331-13.33-35.145 0-48.475s35.143-13.33 48.473 0L776.38 483.925c13.33 13.33 13.33 35.143 0 48.473l-480.492 480.694c-6.665 6.665-15.551 10.099-24.236 10.099z" />
+                        </svg></button>
                 </div>
 
                 <div class="slide">
                     <div class="gradient_effect"></div>
                     <img id="slide4" src="img/slider_aquaman4.jpg" alt="">
                     <h1 class="caption">Aquaman</h1>
-                    <button class="slider1_watch_btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <button class="slider1_watch_btn">İzle
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
                             <path fill="currentColor"
-                                d="M12 20h8v2h-8C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10a9.96 9.96 0 0 1-2 6h-2.708A8 8 0 1 0 12 20m0-10a2 2 0 1 1 0-4a2 2 0 0 1 0 4m-4 4a2 2 0 1 1 0-4a2 2 0 0 1 0 4m8 0a2 2 0 1 1 0-4a2 2 0 0 1 0 4m-4 4a2 2 0 1 1 0-4a2 2 0 0 1 0 4" />
-                        </svg>
-                        İzle</button>
+                                d="M271.653 1023.192c-8.685 0-17.573-3.432-24.238-10.097c-13.33-13.33-13.33-35.144 0-48.474L703.67 508.163L254.08 58.573c-13.33-13.331-13.33-35.145 0-48.475s35.143-13.33 48.473 0L776.38 483.925c13.33 13.33 13.33 35.143 0 48.473l-480.492 480.694c-6.665 6.665-15.551 10.099-24.236 10.099z" />
+                        </svg></button>
                 </div>
 
 
@@ -921,7 +919,7 @@
         <div class="footer_content">
             <a id="footer_logo_header" href="#" class="footer_header"><strong>POPCORN</strong>DREAMS</a>
 
-            <iframe id="iframe-0.6049931788632044" width="100%"
+            <iframe id="iframe-0.6049931788632044" width="205px"
                 src="https://widget.clutch.co/widgets/get/2/darkbg?ref_domain=www.vantaworks.com&amp;uid=1112763&amp;ref_path=/"
                 height="50px" style="border: none; display: block; margin-top: 20px;"
                 title="recaptcha-setup2 Dark"></iframe>
